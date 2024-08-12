@@ -1,0 +1,174 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/contact3.jpg') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+    color: #ff9800;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #ff9800;
+    color: #222;
+}
+
+/* Hamburger Menu (for smaller screens) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: #ff9800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section form label {
+    display: block;
+    font-size: 1.1em;
+    color: #ff9800;
+    margin-bottom: 8px;
+}
+
+.contact-section form input[type="text"],
+.contact-section form input[type="email"],
+.contact-section form input[type="tel"],
+.contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contact-section form button[type="submit"] {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-section form button[type="submit"]:hover {
+    background-color: #e68a00;
+}
+
+.contact-info {
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #222;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
